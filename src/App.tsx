@@ -20,7 +20,7 @@ function App() {
     if (!file) return;
     formData.append("file", file);
     axios
-      .post(`${import.meta.env.BASE_URL}/predict-image`, formData, {
+      .post(`${import.meta.env.VITE_API_BASE_URL}/predict-image`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
