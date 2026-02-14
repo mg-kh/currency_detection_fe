@@ -1,4 +1,2 @@
-html,
-body {
-  background-color: oklch(27.9% 0.041 260.031);
-}
+@import "@mantine/core/styles.css";
+@import "@mantine/notifications/styles.css";
