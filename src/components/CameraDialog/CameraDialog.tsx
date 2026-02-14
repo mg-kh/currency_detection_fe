@@ -37,10 +37,11 @@ const CameraDialog = () => {
   };
 
   useEffect(() => {
+    console.log(isMobile);
     if (isMobile) {
-      setAspectRatio(16 / 9);
-    } else {
       setAspectRatio(9 / 16);
+    } else {
+      setAspectRatio(16 / 9);
     }
   }, [isMobile]);
 
@@ -56,7 +57,6 @@ const CameraDialog = () => {
         style={{
           width: "100%",
           aspectRatio: 16 / 9,
-          position: "relative",
         }}
       >
         <Webcam
